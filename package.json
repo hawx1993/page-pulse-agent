@@ -1,11 +1,11 @@
 {
-  "name": "ai-frontend-copilot",
+  "name": "pagepulse-agent",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "description": "CLI agent for SEO and frontend performance analysis.",
   "bin": {
-    "frontend-audit-agent": "dist/cli.js"
+    "pagepulse-agent": "dist/cli.js"
   },
   "scripts": {
     "analyze": "tsx src/cli.ts",

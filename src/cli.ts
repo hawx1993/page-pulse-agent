@@ -16,13 +16,13 @@ import type { AnalysisResult, Finding } from "./types.js";
 const program = new Command();
 
 program
-  .name("frontend-audit-agent")
+  .name("pagepulse-agent")
   .description("AI agent for SEO, Lighthouse, Web Vitals, SSR/hydration, and chunk analysis.")
   .argument("<input>", "URL, domain, or natural language containing a URL/domain")
   .option("-o, --output <dir>", "output directory", "reports")
   .option("-f, --format <format>", "markdown, json, or both", "both")
   .option("--timeout <ms>", "navigation timeout in milliseconds", "45000")
-  .option("--no-ai", "skip Anthropic AI summary")
+  .option("--no-ai", "skip DeepSeek AI summary")
   .option("--headed", "show browser window")
   .action(async (input, rawOptions) => {
     const started = performance.now();
