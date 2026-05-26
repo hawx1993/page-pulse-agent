@@ -1,5 +1,7 @@
 # PagePulse Agent
 
+[中文文档](README.zh-CN.md)
+
 PagePulse Agent is a Node.js CLI agent for automated frontend performance and technical SEO audits. Given a URL or natural-language prompt containing a domain, it opens the page with Playwright, runs Lighthouse, collects browser performance signals, analyzes rendering and SEO issues, and outputs structured Markdown/JSON reports with optimization priorities.
 
 ## Features
